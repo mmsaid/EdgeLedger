@@ -1,0 +1,28 @@
+
+/* section-1 */
+
+.section-1-content .item{
+  display: flex;
+  align-items: center;
+}
+
+.section-1-content {
+  /* flex-direction: column; */
+  text-align: left;
+  padding: 0rem 2rem 1rem 2rem;
+}
+
+h3 {
+  margin-left: 2rem;
+}
+
+/* section-4 */
+
+.section-4 .section-4-content .section-4-contact {
+  flex: 1.5;
+}
+
+.section-4 .section-4-content .section-4-map {
+  flex: 2.5;
+}
+
