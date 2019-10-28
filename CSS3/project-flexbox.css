@@ -1,5 +1,4 @@
 
-/* that is a font-family I have copied it from google fonts online to use it here in that css file. */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 /* Reset */
@@ -12,7 +11,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
-  /* overflow-x: hidden; */ /*this will prevent the sticky navbar to work properly*/
 }
 
 /* Navbar */
@@ -26,11 +24,9 @@ body {
 .navbar {
   background: #333;
   color: #fff;
-  display: flex; /*to display its direct children(h2 and ul) in a row(horizontal). And also the display:flex will apply to the DIRECT children ONLY (h2 and ul but not li because li is not direct child to the navbar container.)*/
+  display: flex; 
   justify-content: space-between;
-  /* I add padding here to make and equal padding around for the whole navbar. and it's related to the padding for the links (a). if it's smaller than the padding in the links (a) then the hover value will cover the whole navbar like home, what and etc....*/
   padding: 0.8rem;
-  /* to align the logo to the ul list items.*/
   align-items: center;
 }
 
@@ -44,18 +40,14 @@ span {
 }
 
 .navbar ul {
-  /* to display its direct children(li) in a row(horizontal) */
   display: flex;
-  /* to align the ul list items vertical to the logo. */
   align-items: center;
   text-align: center;
   list-style: none;
 }
 
 .navbar ul li a {
-  /* I add padding here to make and equal padding around for the whole (a) links. And this padding is related to the padding on the navbar class. So if this padding bigger than the padding in the navbar container then the hover value will cover the whole nav bar like home, what and ect.... */
   padding: 1.3rem;
-  /* margin: 0 0.50rem; */ /*first issue for the right white space*/
 }
 
 .navbar ul li a:hover{
@@ -70,22 +62,18 @@ span {
   color: #fff;
   height: 100vh;
   position: relative;
-  /* display: none; */
 }
 
 .header-content {
-  /* we have to type that in order to get the text centered horizontal and vertical then in the last we can change its direction..*/
   display: flex;
   text-align: center;
   justify-content: center;
-  height: 100%; /*will display the align-items ONLY if we declare a HEIGHT for the whole container*/
+  height: 100%; 
   align-items: center;
   flex-direction: column;
   padding: 0 2rem;
-  /* overlay. means to put a color on the background without effecting the layout of the content.*/
   position: absolute;
-  /* to start and cover from the top, left and right, down to the bottom */
-  top: 0px; /*to cover after the navbar*/
+  top: 0px; 
   left: 0;
   right: 0;
   bottom: 0;
@@ -120,8 +108,7 @@ span {
 
 .section-1 {
   background: rgb(241, 238, 238);
-  height: auto; /*to control the padding bottom at the end of that section*/
-  /* display: none; */
+  height: auto; 
 }
 
 .section-1-wrapper {
@@ -136,11 +123,9 @@ span {
   font-size: 2rem;
 }
 
-
 .section-1-content {
   display: flex;
   text-align: center;
-  /* height: 100%; */
   padding-bottom: 3rem;
 }
 
@@ -166,10 +151,8 @@ span {
   height: 100%;
   background: #333;
   color: #fff;
-  /* display: none; */
 }
 
-/* that is how to split the page equal to different elements in the same line. So here we give the img and the info an equal space in the same line. */
 .section-2-content div {
   flex: 1;
 }
@@ -187,7 +170,6 @@ span {
 .section-2 .section-2-content .section-2-info {
   padding: 2rem;
   display: inline-block;
-  /* line-height: 1rem; */
 }
 
 .section-2 .section-2-content .section-2-info p {
@@ -214,7 +196,6 @@ span {
 .section-3 {
   height: auto;
   background: rgb(241, 238, 238);
-  /* display: none; */
 }
 
 .section-3-header {
@@ -232,45 +213,31 @@ span {
 
 .section-3-content {
   display: flex;
-  /* text-align: center;
-  padding-bottom: 3rem; */
 }
 
 
 .section-3-content div {
-  flex: 1; /*to give the children an equal size*/
+  flex: 1; 
 }
 
 .section-3-content div img {
-  display: block; /*to accept the margin:auto to center it*/
+  display: block; 
   width: 60%;
   margin: auto;
   margin-bottom: 3rem;
 }
 
 
-/* Section-4 */
-/* .section-4 {
-  height: 400px;
-} */
-
 .section-4 .section-4-content {
   display: flex;
 }
 
-/* here to split the space between the contact and map in equal space */
-/* .section-4 .section-4-content div{
-  flex: 1;
-} */
-/* OR */
 .section-4 .section-4-content .section-4-contact {
   flex: 1.5;
 }
 .section-4 .section-4-content .section-4-map {
   flex: 2.5;
 }
-
-
 
 .section-4 .section-4-contact {
   background: #76b82b;
@@ -308,7 +275,6 @@ textarea {
   width: 100%;
 }
 
-/* the button here is inline-block by default */
 .section-4-btn-1 {
   width: 100%;
   border: none;
@@ -320,7 +286,6 @@ textarea {
   cursor: pointer;
 }
 
-/* the button(reset) throught input here is inline-block by default */
 .section-4-btn-2 {
   width: 100%;
   border: none;
